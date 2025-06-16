@@ -1,6 +1,7 @@
 // Criação e exportação do função de buscar o Pokemon na API //
 export const buscarPokemon = async (pokemon, callBack) => {
-    let urlAPI = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+    let urlAPI = `https://pokeapi.co/api/v2/pokemon/${pokemon}?limit=151&offset=0`;
+    
     fetch(urlAPI, { method: 'GET' })
 
     //Tratamento de resposta da API //
